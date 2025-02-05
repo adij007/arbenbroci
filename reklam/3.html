@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klubet e Gjimnazit "Arben Broci"</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .header {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('https://source.unsplash.com/1600x900/?university');
+            background-size: cover;
+            background-position: center;
+        }
+        .header h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 2s ease-in-out;
+        }
+        .slide {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background-size: cover;
+            background-position: center;
+            transition: all 0.5s ease-in-out;
+        }
+        .slide:nth-child(odd) {
+            background: linear-gradient(45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
+        }
+        .slide .content {
+            max-width: 700px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        .slide h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .slide p {
+            font-size: 1.5rem;
+            line-height: 1.8;
+        }
+        .slide img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+        }
+        #slide1 { background-image: url('https://source.unsplash.com/1600x900/?artificial-intelligence,technology'); }
+        #slide2 { background-image: url('https://source.unsplash.com/1600x900/?debate,discussion'); }
+        #slide3 { background-image: url('https://source.unsplash.com/1600x900/?sports,athletics'); }
+        .footer {
+            padding: 50px 0;
+            background: #000;
+            font-size: 1.2rem;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .slide:hover .content {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Klubet e Gjimnazit "Arben Broci"</h1>
+    </div>
+    <div id="slide1" class="slide">
+        <div class="content">
+            <h1>Klubi i Inteligjencës Artificiale</h1>
+            <p>Klubi i Inteligjencës Artificiale në gjimnazin “Arben Broci” është një hapësirë inovative ku nxënësit eksplorojnë botën e teknologjisë dhe programimit. Përmes punëtorive praktike, diskutimeve mbi zhvillimet më të fundit dhe projekteve kreative, anëtarët e klubit mësojnë bazat e inteligjencës artificiale dhe aplikimin e saj në jetën e përditshme. Ky klub synon të zhvillojë aftësitë teknologjike të nxënësve dhe t’i përgatisë ata për sfidat e së ardhmes në fushën e teknologjisë.</p>
+            <img src="Why-get-certified-in-Artificial-Intelligence.jpg" alt="Klubi i Inteligjencës Artificiale">
+        </div>
+    </div>
+    <div id="slide2" class="slide">
+        <div class="content">
+            <h1>Klubi i Debatit</h1>
+            <p>Klubi i Debatit është një nga hapësirat më dinamike të gjimnazit “Arben Broci”, ku nxënësit mësojnë të argumentojnë, të analizojnë çështje të ndryshme dhe të shprehin mendimet e tyre me logjikë dhe bindje. Përmes diskutimeve dhe garave të debatit, anëtarët e klubit zhvillojnë aftësitë e të folurit në publik, mendimin kritik dhe kulturën e dialogut. Klubi nuk është vetëm një sfidë intelektuale, por edhe një mundësi për të ndërtuar vetëbesimin dhe për të ushtruar lirinë e shprehjes.</p>
+            <img src="750_500_5a396e29c28a7b7e0eb0e57936c68fe1.jpg" alt="Klubi i Debatit">
+        </div>
+    </div>
+    <div id="slide3" class="slide">
+        <div class="content">
+            <h1>Klubi i Sportit</h1>
+            <p>Klubi i Sportit në gjimnazin “Arben Broci” është vendi ku pasioni për aktivitetin fizik dhe fryma e ekipit bashkojnë nxënësit në një mjedis të shëndetshëm dhe argëtues. Nga futbolli dhe volejbolli te atletika dhe basketbolli, klubi organizon trajnime dhe gara sportive që nxisin një stil jetese aktiv dhe promovojnë rëndësinë e bashkëpunimit dhe disiplinës. Ky klub është një mundësi ideale për nxënësit që dëshirojnë të zhvillojnë aftësitë e tyre sportive dhe të jenë pjesë e një komuniteti të energjizuar dhe të motivuar.</p>
+            <img src="start-a-sports-club.jpg" alt="Klubi i Sportit">
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Gjimnazi "Arben Broci" | Të gjitha të drejtat e rezervuara</p>
+    </div>
+</body>
+</html>
